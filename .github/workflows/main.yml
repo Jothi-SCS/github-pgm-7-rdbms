@@ -1,6 +1,4 @@
 # GitHub Actions Autograding Workflow
-
-```yaml
 name: SQL Assignment Autograding
 
 on:
