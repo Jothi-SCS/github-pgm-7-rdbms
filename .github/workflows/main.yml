@@ -1,0 +1,31 @@
+# GitHub Actions Autograding Workflow
+
+```yaml
+name: SQL Assignment Autograding
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  autograding:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install pytest
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Run autograder
+        run: |
+          pytest tests/test_solution.py -v
+```
