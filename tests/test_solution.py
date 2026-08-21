@@ -1,7 +1,4 @@
-# Test Case — `tests/test_solution.py`
 import sqlite3
-import subprocess
-import sys
 import os
 
 DB_FILE = "marksheet.db"
@@ -134,7 +131,7 @@ def test_marks_greater_than_80():
 
 
 def test_descending_order():
-    """Test whether the qualifying students are sorted by Marks descending."""
+    """Test whether qualifying students are sorted by Marks descending."""
     conn = run_sql_file()
 
     cursor = conn.cursor()
