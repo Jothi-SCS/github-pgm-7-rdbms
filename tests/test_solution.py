@@ -1,6 +1,4 @@
 # Test Case — `tests/test_solution.py`
-
-```python
 import sqlite3
 import subprocess
 import sys
@@ -177,4 +175,3 @@ def test_no_student_below_or_equal_to_80():
         assert row[3] > 80, (
             f"Student with marks <= 80 found in result: {row}"
         )
-```
