@@ -1,0 +1,3 @@
+-- Create the Marksheet table
+-- Insert the five records
+-- Write the required query
